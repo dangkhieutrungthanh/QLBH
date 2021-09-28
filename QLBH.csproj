@@ -134,9 +134,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202109280308137_Student.cs" />
-    <Compile Include="Migrations\202109280308137_Student.Designer.cs">
-      <DependentUpon>202109280308137_Student.cs</DependentUpon>
+    <Compile Include="Migrations\202109280418438_Table.cs" />
+    <Compile Include="Migrations\202109280418438_Table.Designer.cs">
+      <DependentUpon>202109280418438_Table.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\KhachHang.cs" />
@@ -209,8 +209,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202109280308137_Student.resx">
-      <DependentUpon>202109280308137_Student.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202109280418438_Table.resx">
+      <DependentUpon>202109280418438_Table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

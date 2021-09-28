@@ -7,13 +7,13 @@ namespace QLBH.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class Student : IMigrationMetadata
+    public sealed partial class Table : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Student));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Table));
         
         string IMigrationMetadata.Id
         {
-            get { return "202109280308137_Student"; }
+            get { return "202109280418438_Table"; }
         }
         
         string IMigrationMetadata.Source

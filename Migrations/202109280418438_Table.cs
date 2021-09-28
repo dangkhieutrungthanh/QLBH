@@ -3,7 +3,7 @@ namespace QLBH.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Student : DbMigration
+    public partial class Table : DbMigration
     {
         public override void Up()
         {

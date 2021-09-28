@@ -10,15 +10,23 @@ namespace QLBH.Models
     {
         public string AutoGennerateKey(string id)
         {
-            string numPart, strPart, newKey = "",newNumPart="";
-            int intnumber;
+            string numPart, strPart, newKey = "", newNumPart = "";
+            int intNumber;
             numPart = Regex.Match(id, @"\d+").Value;
-            intnumber = Convert.ToInt32(numPart) + 1;
-            for (int i =0; i < numPart.Length - intnumber.ToString().Length; i++)
-            { newNumPart += "0"; }
-            newNumPart += intnumber;
-            strPart = numPart = Regex.Match(id, @"\d+").Value;
-            newKey += newNumPart;
+           
+            strPart = Regex.Match(id, @"\D+").Value;
+       
+            intNumber = Convert.ToInt32(numPart) + 1;
+
+        
+            for (int i = 0; i < numPart.Length - intNumber.ToString().Length; i++)
+            {
+                newNumPart += "0";
+            }
+
+            
+            newKey = strPart + newNumPart + intNumber;
+            
             return newKey;
         }
     }
